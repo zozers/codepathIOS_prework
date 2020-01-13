@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         
         if( inputField.text == ""){
             textLable.text = "No Input!!!"
+            view.endEditing(true)
         }
         
         else{
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         view.backgroundColor = bgColor
         textLable.textColor = txtColor
         inputField.text = ""
+        view.endEditing(true)
     }
     
 }
